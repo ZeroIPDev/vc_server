@@ -1,0 +1,20 @@
+<!--
+	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	SFS2X Client Configuration file
+	(c) 2011 gotoAndPlay
+	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+-->
+
+<SmartFoxConfig>
+
+	<!-- Mandatory Settings -->
+	<ip>localhost</ip>
+	<port>9933</port>
+	<zone>VirtuaCreature</zone>
+	<!-- End Mandatory Settings -->
+	<debug>true</debug>
+	<httpPort>8080</httpPort>
+	<useBlueBox>false</useBlueBox>
+	<blueBoxPollingRate>500</blueBoxPollingRate>
+	
+</SmartFoxConfig>
