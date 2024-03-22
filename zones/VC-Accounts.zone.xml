@@ -1,0 +1,165 @@
+<zone>
+  <name>VC-Accounts</name>
+  <isCustomLogin>false</isCustomLogin>
+  <isForceLogout>true</isForceLogout>
+  <applyWordsFilterToUserName>true</applyWordsFilterToUserName>
+  <applyWordsFilterToRoomName>true</applyWordsFilterToRoomName>
+  <applyWordsFilterToPrivateMessages>true</applyWordsFilterToPrivateMessages>
+  <isFilterBuddyMessages>true</isFilterBuddyMessages>
+  <isEncrypted>false</isEncrypted>
+  <maxUsers>1000</maxUsers>
+  <maxUserVariablesAllowed>5</maxUserVariablesAllowed>
+  <maxRoomVariablesAllowed>5</maxRoomVariablesAllowed>
+  <minRoomNameChars>3</minRoomNameChars>
+  <maxRoomNameChars>10</maxRoomNameChars>
+  <maxRooms>500</maxRooms>
+  <maxRoomsCreatedPerUser>3</maxRoomsCreatedPerUser>
+  <userCountChangeUpdateInterval>1000</userCountChangeUpdateInterval>
+  <userReconnectionSeconds>0</userReconnectionSeconds>
+  <overrideMaxUserIdleTime>1800</overrideMaxUserIdleTime>
+  <maxFailedLogins>4</maxFailedLogins>
+  <allowGuestUsers>true</allowGuestUsers>
+  <guestUserNamePrefix>Guest#</guestUserNamePrefix>
+  <publicRoomGroups>default</publicRoomGroups>
+  <defaultRoomGroups>default</defaultRoomGroups>
+  <defaultPlayerIdGeneratorClass></defaultPlayerIdGeneratorClass>
+  <allowInvitationsOnlyForBuddies>false</allowInvitationsOnlyForBuddies>
+  <maxUsersPerJoinInvitationRequest>5</maxUsersPerJoinInvitationRequest>
+  <geoLocationEnabled>false</geoLocationEnabled>
+  <wordsFilter active="true">
+    <useWarnings>false</useWarnings>
+    <warningsBeforeKick>3</warningsBeforeKick>
+    <kicksBeforeBan>2</kicksBeforeBan>
+    <banDuration>1440</banDuration>
+    <maxBadWordsPerMessage>0</maxBadWordsPerMessage>
+    <kicksBeforeBanMinutes>3</kicksBeforeBanMinutes>
+    <secondsBeforeBanOrKick>5</secondsBeforeBanOrKick>
+    <warningMessage>Stop swearing or you will be banned</warningMessage>
+    <kickMessage>Swearing not allowed: you are being kicked</kickMessage>
+    <banMessage>Too much swearing: you are banned</banMessage>
+    <wordsFile>config/wordsFile.txt</wordsFile>
+    <filterMode>BLACKLIST</filterMode>
+    <banMode>NAME</banMode>
+    <hideBadWordWithCharacter>-</hideBadWordWithCharacter>
+  </wordsFilter>
+  <floodFilter active="false">
+    <banDurationMinutes>1440</banDurationMinutes>
+    <maxFloodingAttempts>5</maxFloodingAttempts>
+    <secondsBeforeBan>5</secondsBeforeBan>
+    <banMode>NAME</banMode>
+    <logFloodingAttempts>true</logFloodingAttempts>
+    <banMessage>Too much flooding, you are banned</banMessage>
+  </floodFilter>
+  <rooms/>
+  <disabledSystemEvents/>
+  <privilegeManager active="false">
+    <profiles class="java.util.Arrays$ArrayList">
+      <a class="profile-array">
+        <profile id="0">
+          <name>Guest</name>
+          <deniedRequests class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>CreateRoom</string>
+              <string>PrivateMessage</string>
+              <string>SetRoomVariables</string>
+              <string>SetUserVariables</string>
+              <string>ChangeRoomName</string>
+              <string>ChangeRoomPassword</string>
+              <string>ChangeRoomCapacity</string>
+              <string>InitBuddyList</string>
+              <string>AddBuddy</string>
+              <string>BlockBuddy</string>
+              <string>RemoveBuddy</string>
+              <string>SetBuddyVariables</string>
+              <string>GoOnline</string>
+              <string>BuddyMessage</string>
+              <string>ModeratorMessage</string>
+              <string>AdminMessage</string>
+              <string>KickUser</string>
+              <string>BanUser</string>
+            </a>
+          </deniedRequests>
+          <permissionFlags/>
+        </profile>
+        <profile id="1">
+          <name>Standard</name>
+          <deniedRequests class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ModeratorMessage</string>
+              <string>AdminMessage</string>
+              <string>KickUser</string>
+              <string>BanUser</string>
+            </a>
+          </deniedRequests>
+          <permissionFlags class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ExtensionCalls</string>
+            </a>
+          </permissionFlags>
+        </profile>
+        <profile id="2">
+          <name>Moderator</name>
+          <deniedRequests class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>AdminMessage</string>
+            </a>
+          </deniedRequests>
+          <permissionFlags class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ExtensionCalls</string>
+              <string>SuperUser</string>
+            </a>
+          </permissionFlags>
+        </profile>
+        <profile id="3">
+          <name>Administrator</name>
+          <deniedRequests/>
+          <permissionFlags class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ExtensionCalls</string>
+              <string>SuperUser</string>
+            </a>
+          </permissionFlags>
+        </profile>
+      </a>
+    </profiles>
+  </privilegeManager>
+  <extension>
+    <name>vcExtension</name>
+    <type>JAVA</type>
+    <file>vc.ext.account.account</file>
+    <propertiesFile></propertiesFile>
+    <reloadMode>MANUAL</reloadMode>
+  </extension>
+  <buddyList active="false">
+    <allowOfflineBuddyVariables>true</allowOfflineBuddyVariables>
+    <maxItemsPerList>100</maxItemsPerList>
+    <maxBuddyVariables>15</maxBuddyVariables>
+    <offlineBuddyVariablesCacheSize>500</offlineBuddyVariablesCacheSize>
+    <customStorageClass></customStorageClass>
+    <useTempBuddies>true</useTempBuddies>
+    <buddyStates class="java.util.Arrays$ArrayList">
+      <a class="string-array">
+        <string>Available</string>
+        <string>Away</string>
+        <string>Occupied</string>
+      </a>
+    </buddyStates>
+    <badWordsFilter isActive="false"/>
+  </buddyList>
+  <databaseManager active="true">
+    <driverName>com.mysql.cj.jdbc.Driver</driverName>
+    <connectionString>jdbc:mysql://127.0.0.1:3306/sfs2x</connectionString>
+    <userName>root</userName>
+    <password>password</password>
+    <testSql>SELECT COUNT(*) FROM vc_accounts</testSql>
+    <maxActiveConnections>10000</maxActiveConnections>
+    <maxIdleConnections>10</maxIdleConnections>
+    <exhaustedPoolAction>GROW</exhaustedPoolAction>
+    <blockTime>3000</blockTime>
+  </databaseManager>
+  <maxFindUserResults>50</maxFindUserResults>
+  <maxFindRoomResults>50</maxFindRoomResults>
+  <allowUploads>false</allowUploads>
+  <lagMonitorKeepAlive>false</lagMonitorKeepAlive>
+</zone>
