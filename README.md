@@ -16,8 +16,8 @@ Since the majority of functions are tied to *SmartFoxServer 2X*, reading the ple
 ## Installation
 Ensure prerequisites are already installed and functioning before beginning.
 1. Download and extract the [latest release](https://github.com/ZeroIPDev/vc_server/releases/latest)
-2. Copy the `extensions` and `zones` folders into the `/SFS2X/` folder on your SmartFox installation
-3. Open both `VC-Accounts.zone.xml` and `VirtuaCreature.zone.xml` inside `/SFS2X/zones`; navigate to the `databaseManager` node near the bottom, and replace the username/password values with the real login for your MySQL server
+2. Copy `/extensions` and `/zones/` into the `/SFS2X/` folder on your SmartFox installation
+3. Open both `VC-Accounts.zone.xml` and `VirtuaCreature.zone.xml` inside `/SFS2X/zones/`; navigate to the `databaseManager` node near the bottom, and replace the username/password values with the real login for your MySQL server
 4. Connect to your MySQL server via your chosen client and create a new database called `sfs2x`
 5. Load `/sql/db_setup.sql` and execute the query on said database, which should create 5 new `vc_` tables
 
@@ -31,4 +31,4 @@ At this point you should be able to launch SmartFox successfully.
 
 You should now be able to launch VirtuaCreature and connect to the server. If you wish to allow others to play on your server, simply send them this file with the IP correctly set and they will be able to connect.
 
-**NOTE:** If you receive a "user not found" error before you've registered, you will need to clear your previous login cache. Simply navigate to `%appdata%\zip.vc` and delete the `ELS` folder, then restart the game and try again. You will likely have to do this when switching between servers.
+**NOTE:** If you receive a "user not found" error before you've registered, you will need to clear your previous login cache. Simply navigate to `%appdata%\zip.vc\` and delete the `ELS` folder, then restart the game and try again. You will likely have to do this when switching between servers.
