@@ -19,7 +19,7 @@ public class search extends BaseClientRequestHandler {
             
             //Verify Steam ID
             boolean doSearch = false;
-            if(uPlatform.contentEquals("Steam")) {
+            if(uPlatform.contentEquals("Steam") && account.enable_steam_ids) {
             	doSearch = true;
             }
             

@@ -45,7 +45,7 @@ public class creation extends BaseClientRequestHandler {
         	if(!res.first()) { //Name is free
         		String uPass = generateUserPassword(); //Create password
         		PreparedStatement ustmt;
-        		if(uPlatform.contentEquals("Steam")) {
+        		if(uPlatform.contentEquals("Steam") && account.enable_steam_ids) {
         			ustmt = connection.prepareStatement("INSERT INTO vc_accounts (Name, Pass, Steam) VALUES (?, ?, ?)", ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
         			ustmt.setString(3, uID);
         		} else {
