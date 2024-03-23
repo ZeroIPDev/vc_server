@@ -17,7 +17,7 @@ Since the majority of functions are tied to *SmartFoxServer 2X*, reading the ple
 Ensure prerequisites are already installed and functioning before beginning.
 1. Download and extract the [latest release](https://github.com/ZeroIPDev/vc_server/releases/latest)
 2. Copy the `extensions` and `zones` folders into the `/SFS2X/` folder on your SmartFox installation
-3. Open both `VC-Accounts.xml` and `VirtuaCreature.xml` inside `/SFS2X/zones`; navigate to the `databaseManager` node near the bottom, and replace the username/password values with the real login for your MySQL server
+3. Open both `VC-Accounts.zone.xml` and `VirtuaCreature.zone.xml` inside `/SFS2X/zones`; navigate to the `databaseManager` node near the bottom, and replace the username/password values with the real login for your MySQL server
 4. Connect to your MySQL server via your chosen client and create a new database called `sfs2x`
 5. Load `/sql/db_setup.sql` and execute the query on said database, which should create 5 new `vc_` tables
 
