@@ -9,8 +9,6 @@ This repository is presented **without additional support** at this time. You ar
 
 Since the majority of functions are tied to *SmartFoxServer 2X*, reading the plethora of [help docs](https://docs2x.smartfoxserver.com/) is a great place to look if you're unsure on how a particular aspect of this server works.
 
-# Server setup
-
 ## Prerequisites
 * JDK 11 installation, such as [Adoptium](https://adoptium.net/temurin/releases/?version=11)
 * [SmartFoxServer 2X](https://smartfoxserver.com/download/sfs2x#p=installer) working installation
@@ -27,9 +25,7 @@ Ensure prerequisites are already installed and functioning before beginning.
 
 At this point you should be able to launch SmartFox successfully.
 
-# Connecting to server in-game
-
-## Configuration
+## Connecting in-game
 1. Copy `sfs-config.xml` from the `/config/` folder to the root of your VirtuaCreature installation
 2. Open and change the `ip` value to the IP address of the server, if it's not running on the local machine
 
