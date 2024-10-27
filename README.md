@@ -1,7 +1,11 @@
-# vc_server
-VirtuaCreature server files.
+# VirtuaCreature, by Zero Imagination Productions
 
-Please note this repository is presented **without additional support** at this time. You are expected to have some general programming and networking knowledge to get this working.
+[Client](https://github.com/ZeroIPDev/vc_main) | **Server**
+
+> [!WARNING]
+> This is an old, mostly unmaintained codebase.
+
+This repository is presented **without additional support** at this time. You are expected to have some general programming and networking knowledge to get this working.
 
 Since the majority of functions are tied to *SmartFoxServer 2X*, reading the plethora of [help docs](https://docs2x.smartfoxserver.com/) is a great place to look if you're unsure on how a particular aspect of this server works.
 
