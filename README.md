@@ -1,11 +1,11 @@
 # VirtuaCreature, by Zero Imagination Productions
 
-[Client](https://github.com/ZeroIPDev/vc_main) | **Server**
+[Client](https://github.com/ZeroIPDev/vc_client) | **Server**
 
 > [!WARNING]
 > This is an old, mostly unmaintained codebase.
 
-This repository is presented **without additional support** at this time. You are expected to have some general programming and networking knowledge to get this working.
+This project contains a *lot* of old code, and it being our first major project, there are mistakes and bad practices. We will not be refactoring, improving styling or readability, etc, so treat this repo primarily as an archive.
 
 Since the majority of functions are tied to *SmartFoxServer 2X*, reading the plethora of [help docs](https://docs2x.smartfoxserver.com/) is a great place to look if you're unsure on how a particular aspect of this server works.
 
